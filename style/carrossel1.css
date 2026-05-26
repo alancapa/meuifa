@@ -159,3 +159,31 @@
   max-height: 100%;
   object-fit: contain; /* Garante que a imagem não distorça na tela cheia */
 }
+
+
+
+
+.carrossel {
+    position: relative;
+    /* Melhora a estilização quando estiver em tela cheia */
+    background-color: white; 
+    padding: 2rem;
+}
+
+/* Garante que o carrossel se ajuste perfeitamente ao tamanho da tela */
+.carrossel:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto; /* Permite rolar a página se o conteúdo for maior que a tela */
+    background-color: white; /* Altere para a cor desejada */
+}
+
+#btn-fullscreen {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
